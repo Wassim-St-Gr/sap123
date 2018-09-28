@@ -1,0 +1,14 @@
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.095   ### Single batch import started
+
+WARN  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.098   column faqTopic of type FaqArticle is not writable, but you want to update it. If you want to write this non writable attribute explicit, you have to use the forceWrite=true modifier. This warning is printed only once for header. Please check subsequent lines for similar problem.
+
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.100   BatchData created. Current mode: INSERT_UPDATE; Type: FaqArticle; Effective batch size: 6
+
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.108   Number of models saved in bulk: 6
+
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.108   Number of lines dumped for next pass: 0
+
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.108   ### Single batch import finished. Time taken 12.74 ms
+
+INFO  [TaskExecutor-master-167-DistributedProcessWorkerTask [8796159181750]] 11:15:34.108   Successfully imported batch ImportBatchModel (8796093448304@0) (id=0, executionId=0_0)
+

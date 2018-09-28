@@ -1,0 +1,12 @@
+
+INSERT_UPDATE Keyword;keyword[unique=true];language(isocode);catalogversion(catalog(id[default=apparel-ukContentCatalog]),version[default='Online'])[unique=true,default=apparel-ukContentCatalog:Online]
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';RÜCKTRITT;de;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';ZAHLUNGEN;de;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';MODIFICATION;en;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';SHIPPING;en;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';LIEFERUNG;de;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';VERSAND;de;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';PAYMENTS;en;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';CANCELLATION;en;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';DELIVERY;en;
+,,,,error finding existing item : column='catalogversion' value='', | column 3: cannot resolve value '' for attribute 'catalogversion';ÄNDERUNG;de;

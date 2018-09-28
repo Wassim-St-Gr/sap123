@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://www.hybris.com/cockpit/config">
+    <context type="com.hybris.cockpitng.util.Range" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="rangeLabelProvider"/>
+        </y:base>
+    </context>
+    <context component="collaborationDragAndDropComponent">
+        <dnd:drag-and-drop xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" strategy="collaborationViewDnD"/>
+    </context>
+    <context type="Item" component="dragItemsDnDComponent">
+        <dnd:drag-and-drop xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" strategy="dragItemsDnD"/>
+    </context>
+    <context type="java.lang.String" component="simple-list">
+        <ysl:simple-list xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <ysl:name field="#root"/>
+            <ysl:description field="class.canonicalName"/>
+        </ysl:simple-list>
+    </context>
+    <context type="java.lang.Object" component="listview">
+        <lv:list-view xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <lv:column label="hmc.value" qualifier="toString()"/>
+        </lv:list-view>
+    </context>
+    <context type="java.util.Collection" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="collectionLabelProvider"/>
+		</y:base>
+    </context>
+    <context type="java.util.Map" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="mapLabelProvider"/>
+		</y:base>
+    </context>
+    <context type="java.util.Locale" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="localeLabelProvider"/>
+		</y:base>
+    </context>
+    <context type="java.util.Date" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="dateLabelProvider"/>
+		</y:base>
+    </context>
+    <context type="java.lang.Double" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="javaLangDoubleLabelProvider"/>
+		</y:base>
+    </context>
+    <context type="PriceRow" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels beanId="priceRowLabelProvider"/>
+		</y:base>
+    </context>
+    <context merge-by="type" type="CronJobHistory" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels>
+                <y:label>cronJob!=null ? @labelService.getObjectLabel(cronJob):T(org.zkoss.util.resource.Labels).getLabel('processes.title.default')</y:label>
+			</y:labels>
+		</y:base>
+    </context>
+    <context merge-by="type" type="DataAttribute" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels>
+                <y:label/>
+			</y:labels>
+		</y:base>
+    </context>
+    <context type="com.hybris.cockpitng.validation.model.ValidationInfo" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels>
+                <y:label>getValidationMessage()</y:label>
+			</y:labels>
+		</y:base>
+    </context>
+    <context merge-by="source" component="notification-area" source="syncPopup">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="syncCannotRun" level="FAILURE">
+                <na:message>user.notification.sync.cannot.run</na:message>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context component="systembar-actions-left">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+        </y:actions>
+    </context>
+    <context component="systembar-actions-right" authority="backofficeworkflowadmin,backofficeworkflowuser">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.labeledtoggle" property="$_numberOfWorkflowActions">
+                    <y:parameter>
+                        <y:name>toggleCondition</y:name>
+                        <y:value>"opened".equals(#root)</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>iconOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>labelExpression</y:name>
+                        <y:value>#root != null and #root &gt; 0 ? #root : null</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>iconUri</y:name>
+                        <y:value>/widgetClasspathResource/widgets/workflows/images/icon_collaboration.svg</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>outputSocket</y:name>
+                        <y:value>collaborationToggleSidebar</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>toggleInput</y:name>
+                        <y:value>collaborationToggleState</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionStyleClass</y:name>
+                        <y:value>yw-collaboration-center-toggle z-toolbarbutton</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label.collaborationCenter</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context component="collaboration-center-header-toolbar-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.message">
+                    <y:parameter>
+                        <y:name>message</y:name>
+                        <y:value>"collaboration.label"</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>socket</y:name>
+                        <y:value>selectView</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label.collaborationCenter.overview</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionStyleClass</y:name>
+                        <y:value>yw-collaboration-center-header-toolbar-action</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context component="collaboration-center-title-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.message">
+                    <y:parameter>
+                        <y:name>message</y:name>
+                        <y:value>"dummy"</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label.collaborationCenter.title</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionStyleClass</y:name>
+                        <y:value>yw-collaboration-center-title</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context component="taskEdit-quickList-header-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.message" property="$_selectedAction">
+                    <y:parameter>
+                        <y:name>message</y:name>
+                        <y:value>#root</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>socket</y:name>
+                        <y:value>selectedAction</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionStyleClass</y:name>
+                        <y:value>yw-collaboration-center-task-quicklist-header-title</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="Product" component="collaborationCenter-quickList-threedots-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:three-dots-group qualifier="common">
+                <y:action action-id="com.hybris.backoffice.widgets.actions.bulkedit" property="$_items">
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>bulkedit.actionName</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.enumeration" property="$_items">
+                    <y:parameter>
+                        <y:name>qualifier</y:name>
+                        <y:value>approvalStatus</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>bulk.inlineapproval</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>menu</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.sync" property="$_items">
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label.synchronize</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.excel.export" property="typeCode">
+                    <y:parameter>
+                        <y:name>selectedObjects</y:name>
+                        <y:value>$_items</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>textOnly</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label.export.all</y:value>
+					</y:parameter>
+				</y:action>
+			</y:three-dots-group>
+		</y:actions>
+    </context>
+    <context type="WorkflowItemAttachment" component="workflowDetails-attachments-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.backoffice.widgets.actions.addworkflowattachment" property="$_selectedWorkflow"/>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="WorkflowItemAttachment" component="workflowDetails-attachments">
+        <cb:collection-browser xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <cb:available-molds default-mold="list-view">
+                <cb:mold spring-bean="listViewCollectionBrowserMoldStrategy"/>
+			</cb:available-molds>
+		</cb:collection-browser>
+    </context>
+    <context component="taskEdit-quickList-toolbar-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.workflowactiondecisionaction" property="$_selectedAction">
+                    <y:parameter>
+                        <y:name>socket</y:name>
+                        <y:value>selectedAction</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="Product" component="taskEdit-item-toolbar-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:label>actiongroup.common</y:label>
+                <y:action action-id="com.hybris.cockpitng.action.delete" property="$_selectedItem"/>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.sync" property="$_selectedItem"/>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="Category" component="taskEdit-item-toolbar-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:label>actiongroup.common</y:label>
+                <y:action action-id="com.hybris.cockpitng.action.delete" property="$_selectedItem"/>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.sync" property="$_selectedItem"/>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="Product" component="taskEdit-quickList">
+        <ql:quick-list xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" default-image="cng/img/default/grid_view_default_preview.png" display-default-image="true" display-preview="true">
+            <ql:attribute qualifier="catalogVersion"/>
+            <ql:attribute qualifier="code"/>
+            <ql:attribute qualifier="name"/>
+		</ql:quick-list>
+    </context>
+    <context type="WorkflowAction" component="workflowOverview-collectionbrowser">
+        <cb:collection-browser xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <cb:available-molds default-mold="list-view">
+                <cb:mold spring-bean="listViewCollectionBrowserMoldStrategy"/>
+			</cb:available-molds>
+		</cb:collection-browser>
+    </context>
+    <context type="Workflow" component="workflowOverview-collectionbrowser">
+        <cb:collection-browser xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <cb:available-molds default-mold="list-view">
+                <cb:mold spring-bean="listViewCollectionBrowserMoldStrategy"/>
+			</cb:available-molds>
+		</cb:collection-browser>
+    </context>
+    <context component="workflow-status-filter">
+        <vc:value-chooser xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <vc:option id="planned" label="workflows.status.planned" selected="true">
+                <vc:value expression="PLANNED" id="planned"/>
+			</vc:option>
+            <vc:option id="running" label="workflows.status.running" selected="true">
+                <vc:value expression="RUNNING" id="running"/>
+			</vc:option>
+            <vc:option id="finished" label="workflows.status.finished">
+                <vc:value expression="FINISHED" id="finished"/>
+			</vc:option>
+            <vc:option id="terminated" label="workflows.status.terminated">
+                <vc:value expression="TERMINATED" id="terminated"/>
+			</vc:option>
+		</vc:value-chooser>
+    </context>
+    <context merge-by="type" type="WorkflowAction" component="workflowOverview-browser-listview">
+        <lv:list-view xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <lv:column position="10" qualifier="name"/>
+            <lv:column hflex="1" position="20" qualifier="principalAssigned"/>
+            <lv:column label="item.workflowname.label" position="30" qualifier="workflow.name"/>
+            <lv:column label="item.modifiedtime.label" position="40" qualifier="modifiedtime"/>
+            <lv:column label="product.attachments.column.label" position="50" qualifier="#root.attachmentItems.?[#this != null]" spring-bean="countingRenderer"/>
+            <lv:column label=" " position="60" qualifier="" spring-bean="workflowActionMenuContainerRenderer" width="45px"/>
+		</lv:list-view>
+    </context>
+    <context merge-by="type" type="WorkflowAction" component="workflowDetails-browser-listview">
+        <lv:list-view xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <lv:column position="10" qualifier="name"/>
+            <lv:column hflex="1" position="20" qualifier="principalAssigned"/>
+            <lv:column position="30" qualifier="status"/>
+            <lv:column label="item.modifiedtime.label" position="40" qualifier="modifiedtime"/>
+            <lv:column label="product.attachments.column.label" position="50" qualifier="#root.attachmentItems.?[#this != null]" spring-bean="countingRenderer"/>
+		</lv:list-view>
+    </context>
+    <context merge-by="type" type="WorkflowItemAttachment" component="workflowDetails-browser-listview">
+        <lv:list-view xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <lv:column auto-extract="true" label="" position="1" qualifier="item" spring-bean="previewListCellRenderer"/>
+            <lv:column hflex="1" label="collaboration.workflowdetails.attachments.attachment" position="2" qualifier="item!=null ? item:T(org.zkoss.util.resource.Labels).getLabel('collaboration.workflowdetails.attachments.itemremoved')"/>
+            <lv:column label="collaboration.workflowdetails.attachments.type" position="3" qualifier="@labelService.getShortObjectLabel(typeOfItem)"/>
+            <lv:column label="collaboration.workflowdetails.attachments.comments" position="4" qualifier="comments" spring-bean="countingRenderer"/>
+            <lv:column label=" " position="5" qualifier="" spring-bean="workflowAttachmentMenuContainerRenderer" width="45px"/>
+		</lv:list-view>
+    </context>
+    <context merge-by="type" type="Workflow" component="workflowOverview-browser-listview">
+        <lv:list-view xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <lv:column link="true" link-value="#root" position="10" qualifier="name" spring-bean="detailedWorkflowNameRenderer"/>
+            <lv:column position="20" qualifier="status" spring-bean="workflowStatusRenderer"/>
+            <lv:column hflex="1" position="30" qualifier="description"/>
+            <lv:column label="item.modifiedtime.label" position="40" qualifier="modifiedtime"/>
+            <lv:column label="product.attachments.column.label" position="50" qualifier="attachments" spring-bean="countingRenderer"/>
+            <lv:column label="" position="60" qualifier="" spring-bean="workflowOverviewMenuContainerRenderer" width="45px"/>
+		</lv:list-view>
+    </context>
+    <context type="WorkflowAction" component="workflowOverview-tasks-fulltext-search">
+        <ful:fulltext-search xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <ful:field-list>
+                <ful:field name="code"/>
+                <ful:field name="name"/>
+                <ful:field name="principalAssigned"/>
+                <ful:field name="activated"/>
+                <ful:field name="workflow"/>
+            </ful:field-list>
+            <ful:preferred-search-strategy>flexible</ful:preferred-search-strategy>
+            <ful:operator>OR</ful:operator>
+        </ful:fulltext-search>
+    </context>
+    <context type="WorkflowAction" component="workflowDetails-tasks-fulltext-search">
+        <ful:fulltext-search xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <ful:field-list>
+                <ful:field name="code"/>
+                <ful:field name="name"/>
+                <ful:field name="principalAssigned"/>
+                <ful:field name="activated"/>
+                <ful:field name="status"/>
+            </ful:field-list>
+            <ful:preferred-search-strategy>flexible</ful:preferred-search-strategy>
+            <ful:operator>OR</ful:operator>
+        </ful:fulltext-search>
+    </context>
+    <context type="Workflow" component="workflowOverview-collectionbrowser-workflows-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:label>actiongroup.common</y:label>
+                <y:action action-id="com.hybris.cockpitng.action.create" property="pageable.typeCode">
+                    <y:parameter>
+                        <y:name>TYPE_CODE</y:name>
+                        <y:value>com.hybris.backoffice.workflow.wizard.CollaborationWorkflowWizardForm</y:value>
+					</y:parameter>
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>label</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context type="Workflow" component="workflowDetails-editorArea" module="platformbackoffice">
+        <ea:editorArea xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <ea:tab name="workflowDetails">
+                <ea:section name="collaboration.workflow.details.workflow.details.section.label">
+                    <ea:attribute editor="com.hybris.cockpitng.editor.instanteditor(com.hybris.cockpitng.editor.localized)" label="collaboration.workflow.details.workflow.name.label" qualifier="name" readonly="true"/>
+                    <ea:attribute editor="com.hybris.cockpitng.editor.decoratededitor(com.hybris.cockpitng.editor.instanteditor(com.hybris.cockpitng.editor.defaultdate), {workflowStartedTimeEditorRenderer})" label="collaboration.workflow.details.workflow.started.label" qualifier="startTime" readonly="true">
+                        <ea:editor-parameter>
+                            <ea:name>noValueLabelKey</ea:name>
+                            <ea:value>collaboration.workflow.details.workflow.notstarted.label</ea:value>
+							</ea:editor-parameter>
+                        <ea:editor-parameter>
+                            <ea:name>noValueLabelStyle</ea:name>
+                            <ea:value>yw-workflow-detailed-novalue</ea:value>
+							</ea:editor-parameter>
+						</ea:attribute>
+                    <ea:attribute editor="com.hybris.cockpitng.editor.instanteditor(com.hybris.cockpitng.editor.defaultdate)" label="collaboration.workflow.details.workflow.lastupdate.label" qualifier="modifiedtime" readonly="true"/>
+				</ea:section>
+                <ea:section name="collaboration.workflow.details.description.section.label">
+                    <ea:attribute editor="com.hybris.cockpitng.editor.instanteditor(com.hybris.cockpitng.editor.localized)" label="" qualifier="description" readonly="true">
+                        <ea:editor-parameter>
+                            <ea:name>noValueLabelKey</ea:name>
+                            <ea:value>collaboration.workflow.details.description.novalue.label</ea:value>
+						</ea:editor-parameter>
+                        <ea:editor-parameter>
+                            <ea:name>noValueLabelStyle</ea:name>
+                            <ea:value>yw-workflow-detailed-novalue</ea:value>
+						</ea:editor-parameter>
+					</ea:attribute>
+				</ea:section>
+			</ea:tab>
+		</ea:editorArea>
+    </context>
+    <context type="Workflow" component="workflowDetails-summaryView" module="platformbackoffice">
+        <sv:summary-view xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" display-thumbnail="false" display-title="false">
+            <sv:section>
+                <sv:custom-attribute label="collaboration.workflow.details.summary.status.label" spring-bean="workflowDetailsSummaryStatusRenderer"/>
+                <sv:custom-attribute label="collaboration.workflow.details.summary.currenttasks.label" spring-bean="workflowDetailsSummaryCurrentTasksRenderer"/>
+            </sv:section>
+            <sv:section name="summaryview.section.info">
+                <sv:custom-attribute label="collaboration.workflow.details.summary.attachments.label" spring-bean="workflowDetailsSummaryAttachementsRenderer"/>
+                <sv:custom-attribute label="collaboration.workflow.details.summary.flow.label" spring-bean="workflowDetailsSummaryFlowRenderer"/>
+            </sv:section>
+        </sv:summary-view>
+    </context>
+    <context merge-by="source" parent="dragAndDropWarningMultiple" component="notification-area" source="dragAndDropItemToWorkflowAppendWarningSingle">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="WARNING">
+                <na:message>collaboration.dnd.single.warning</na:message>
+                <na:references>
+                    <na:reference link="true" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" parent="dragAndDropWarningMultiple" component="notification-area" source="dragAndDropItemToWorkflowAppendWarningMultiple">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="WARNING">
+                <na:message>collaboration.dnd.multiple.warning</na:message>
+                <na:references>
+                    <na:reference label="#root.size()" link="false" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" parent="dragAndDropSuccessSingle" component="notification-area" source="dragAndDropItemToWorkflowAppendSuccessSingle">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="SUCCESS">
+                <na:message>collaboration.dnd.single.success</na:message>
+                <na:references>
+                    <na:reference link="true" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" parent="dragAndDropFailureSingle" component="notification-area" source="dragAndDropItemToWorkflowAppendFailureSingle">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="FAILURE">
+                <na:message>collaboration.dnd.single.failure</na:message>
+                <na:references>
+                    <na:reference link="true" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" parent="dragAndDropMultiple" component="notification-area" source="dragAndDropItemToWorkflowAppendSuccessMultiple">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="SUCCESS">
+                <na:message>collaboration.dnd.multiple.success</na:message>
+                <na:references>
+                    <na:reference label="#root.size()" link="false" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" parent="dragAndDropMultiple" component="notification-area" source="dragAndDropItemToWorkflowAppendFailureMultiple">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="UpdateObject" level="FAILURE">
+                <na:message>collaboration.dnd.multiple.failure</na:message>
+                <na:references>
+                    <na:reference label="#root.size()" link="false" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="collaboration-workflow">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="WorkflowCreatedAndStarted" level="SUCCESS">
+                <na:message>collaboration.workflow.createdandstarted</na:message>
+                <na:references>
+                    <na:reference label="#root.workflow" link="true" placeholder="0">
+                        <na:context evaluate="true" parameter="triggerContext" value="#root.referencedObjects[0].destination"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowStarted" level="SUCCESS">
+                <na:message>collaboration.workflow.started</na:message>
+                <na:references>
+                    <na:reference label="#root.workflow" link="true" placeholder="0">
+                        <na:context evaluate="true" parameter="triggerContext" value="#root.referencedObjects[0].destination"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications destination="GLOBAL" eventType="WorkflowStarted" level="FAILURE">
+                <na:message>collaboration.workflow.notstarted</na:message>
+                <na:references>
+                    <na:reference link="false" message="#root" placeholder="0"/>
+				</na:references>
+            </na:notifications>
+            <na:notifications eventType="WorkflowWithoutAttachments" level="FAILURE">
+                <na:message>collaboration.workflow.without.attachments</na:message>
+			</na:notifications>
+            <na:notifications eventType="WorkflowCreated" level="SUCCESS">
+                <na:message>collaboration.workflow.created</na:message>
+                <na:references>
+                    <na:reference label="#root.workflow" link="true" placeholder="0">
+                        <na:context evaluate="true" parameter="triggerContext" value="#root.referencedObjects[0].destination"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowCreated" level="FAILURE">
+                <na:message>collaboration.workflow.cannotcreated</na:message>
+            </na:notifications>
+            <na:notifications eventType="WorkflowDeleted" level="SUCCESS">
+                <na:message>collaboration.workflow.deleted</na:message>
+                <na:references>
+                    <na:reference link="false" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowDeleted" level="FAILURE">
+                <na:message>collaboration.workflow.cannotdeleted</na:message>
+                <na:references>
+                    <na:reference link="false" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowTerminated" level="SUCCESS">
+                <na:message>collaboration.workflow.terminated</na:message>
+                <na:references>
+                    <na:reference label="#root.workflow" link="true" placeholder="0">
+                        <na:context evaluate="true" parameter="triggerContext" value="#root.referencedObjects[0].destination"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowTerminated" level="FAILURE">
+                <na:message>collaboration.workflow.cannotterminated</na:message>
+                <na:references>
+                    <na:reference label="#root.workflow" link="false" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="AdHocWorkflowInCorrectAssignee" level="FAILURE">
+                <na:message>collaboration.workflow.incorrectassignee</na:message>
+            </na:notifications>
+            <na:notifications eventType="WorkflowAttachmentDeleted" level="SUCCESS">
+                <na:message>collaboration.workflow.attachment.deleted</na:message>
+                <na:references>
+                    <na:reference link="false" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowAttachmentDeleted" level="FAILURE">
+                <na:message>collaboration.workflow.attachment.cannotdeleted</na:message>
+                <na:references>
+                    <na:reference link="false" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+        </na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="workflowOverview-tasks-collectionbrowser">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="WorkflowDecision" level="SUCCESS">
+                <na:message>collaboration.task.decision.taken</na:message>
+                <na:references>
+                    <na:reference label="#root" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowDecision" level="FAILURE">
+                <na:message>collaboration.task.decision.failed</na:message>
+                <na:references>
+                    <na:reference index="0" label="#root.getMessage()" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+                    <na:reference index="1" label="#root" link="false" placeholder="1">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowTerminated" level="FAILURE">
+                <na:message>collaboration.task.decision.terminated</na:message>
+                <na:references>
+                    <na:reference index="0" label="#root.getMessage()" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+                    <na:reference index="1" label="#root" link="false" placeholder="1">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="collaborationCenter-taskEdit-decision">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="WorkflowDecision" level="SUCCESS">
+                <na:message>collaboration.task.decision.taken</na:message>
+                <na:references>
+                    <na:reference label="#root" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowDecision" level="FAILURE">
+                <na:message>collaboration.task.decision.failed</na:message>
+                <na:references>
+                    <na:reference index="0" label="#root.getMessage()" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+                    <na:reference index="1" label="#root" link="false" placeholder="1">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+            <na:notifications eventType="WorkflowTerminated" level="FAILURE">
+                <na:message>collaboration.task.decision.terminated</na:message>
+                <na:references>
+                    <na:reference index="0" label="#root.getMessage()" link="false" placeholder="0">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+                    <na:reference index="1" label="#root" link="false" placeholder="1">
+                        <na:context parameter="triggerContext" value="workflowDetails"/>
+					</na:reference>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="item-comments">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="WrongItemCommentsSettings" level="FAILURE">
+                <na:message>com.hybris.cockiptng.itemcomments.wrong.settings</na:message>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context type="GenericItem" component="excel-import-wizard">
+        <wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" id="excelImportWizard" show-breadcrumb="false" title="excel.import.wizard.title">
+            <wz:prepare id="excelImportWizardPrepare">
+                <wz:initialize property="excelForm" template-bean="excelImportWizardForm"/>
+			</wz:prepare>
+            <wz:step id="step1" label="">
+                <wz:content>
+                    <wz:property editor="com.hybris.cockpitng.editor.dndfileupload" qualifier="excelForm.excelFile" type="com.hybris.cockpitng.editor.defaultfileupload.FileUploadResult" validate="false">
+                        <wz:editor-parameter>
+                            <wz:name>accept</wz:name>
+                            <wz:value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</wz:value>
+						</wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>singleLineMode</wz:name>
+                            <wz:value>true</wz:value>
+						</wz:editor-parameter>
+					</wz:property>
+                    <wz:property editor="com.hybris.cockpitng.editor.dndfileupload" qualifier="excelForm.zipFile" type="com.hybris.cockpitng.editor.defaultfileupload.FileUploadResult" validate="false">
+                        <wz:editor-parameter>
+                            <wz:name>accept</wz:name>
+                            <wz:value>application/zip</wz:value>
+						</wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>singleLineMode</wz:name>
+                            <wz:value>true</wz:value>
+						</wz:editor-parameter>
+					</wz:property>
+				</wz:content>
+                <wz:navigation id="step1.navigation">
+                    <wz:cancel/>
+                    <wz:custom handler="excelImportHandler" label="excel.import.wizard.button.label" visible="excelForm.excelFile!=null"/>
+				</wz:navigation>
+			</wz:step>
+            <wz:step id="step2" label="">
+                <wz:content id="step2.content">
+                    <wz:custom-view lang="zul">
+                        <wz:renderer spring-bean="excelImportValidationResultRenderer"/>
+					</wz:custom-view>
+				</wz:content>
+                <wz:navigation id="step2.navigation">
+                    <wz:back/>
+                    <wz:cancel/>
+                    <wz:custom handler="excelImportDownloadValidationErrorHandler" label="excel.import.wizard.downloadvalidationerrros.button.label"/>
+				</wz:navigation>
+			</wz:step>
+		</wz:flow>
+    </context>
+    <context type="GenericItem" component="excel-export-wizard">
+        <wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" id="excelExportWizard" show-breadcrumb="false" size="large" title="excel.export.wizard.title">
+            <wz:prepare id="excelExportWizardPrepare">
+                <wz:initialize property="excelForm" template-bean="excelExportWizardForm"/>
+                <wz:initialize property="excelForm.attributesForm" template-bean="attributesForm"/>
+                <wz:assign property="excelForm.pageable" value="ctx.excelExportData"/>
+                <wz:assign property="excelForm.typeCode" value="ctx.TYPE_CODE"/>
+			</wz:prepare>
+            <wz:step id="step1" label="">
+                <wz:content id="step1.content">
+                    <wz:custom-view lang="zul">
+                        <wz:renderer spring-bean="excelExportRenderer">
+                            <wz:parameter>
+<wz:name>excelFormModelKey</wz:name>
+<wz:value>excelForm</wz:value>
+							</wz:parameter>
+						</wz:renderer>
+					</wz:custom-view>
+				</wz:content>
+                <wz:navigation id="step1.navigation">
+                    <wz:cancel/>
+                    <wz:custom handler="excelExportHandler" label="excel.export.wizard.button.label" visible="excelForm.attributesForm.hasSelectedAttributes()">
+                        <wz:parameter>
+                            <wz:name>excelFormModelKey</wz:name>
+                            <wz:value>excelForm</wz:value>
+						</wz:parameter>
+					</wz:custom>
+				</wz:navigation>
+			</wz:step>
+		</wz:flow>
+    </context>
+    <context merge-by="source" component="notification-area" source="excelImport">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="excelMissingExcelFile" level="FAILURE">
+                <na:message>excel.notify.missing.file.failure</na:message>
+			</na:notifications>
+            <na:notifications eventType="excelMissingExcelFormInModel" level="FAILURE">
+                <na:message>excel.notify.missing.form.failure</na:message>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context type="com.hybris.backoffice.workflow.wizard.CollaborationWorkflowWizardForm" component="create-wizard">
+        <wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" id="collaborationWorkflowWizard" title="collaboration.workflowwizard.title">
+            <wz:prepare id="collaborationWorkflowWizardPrepare">
+                <wz:initialize property="workflowForm" template-bean="collaborationWorkflowWizardForm"/>
+                <wz:assign property="workflowForm.attachments" value="ctx.attachments"/>
+                <wz:assign property="attachmentType" value="ctx.attachmentType"/>
+                <wz:assign property="requireAssignee" value="false"/>
+            </wz:prepare>
+            <wz:step id="step1" label="collaboration.workflowwizard.step.essentials.label" sublabel="collaboration.workflowwizard.step.essentials.sublabel">
+                <wz:info label="collaboration.workflowwizard.step.essentials.info" position="top"/>
+                <wz:content id="step1.content">
+                    <wz:property qualifier="workflowForm.workflowTemplate" type="Reference(WorkflowTemplate)">
+                        <wz:editor-parameter>
+                            <wz:name>availableValuesProvider</wz:name>
+                            <wz:value>workflowTemplateReferenceSearchFacade</wz:value>
+                        </wz:editor-parameter>
+                    </wz:property>
+                    <wz:custom-view lang="zul">
+                        <wz:renderer spring-bean="workflowShowFlowViewRenderer"/>
+					</wz:custom-view>
+                    <wz:property qualifier="workflowForm.name" type="Localized(java.lang.String)"/>
+                    <wz:property qualifier="workflowForm.assignee" type="Reference(Principal)">
+                        <wz:editor-parameter>
+                            <wz:name>availableValuesProvider</wz:name>
+                            <wz:value>workflowAssigneeReferenceSearchFacade</wz:value>
+                        </wz:editor-parameter>
+                    </wz:property>
+                </wz:content>
+                <wz:navigation id="step1.navigation">
+                    <wz:cancel/>
+                    <wz:next visible="workflowForm.workflowTemplate!=null and (!requireAssignee or workflowForm.assignee!=null)"/>
+                </wz:navigation>
+            </wz:step>
+            <wz:step id="step2" label="collaboration.workflowwizard.step.attachments.label" sublabel="collaboration.workflowwizard.step.attachments.sublabel">
+                <wz:info label="collaboration.workflowwizard.step.attachments.info" position="top"/>
+                <wz:content id="step2.content">
+                    <wz:property qualifier="attachmentType" type="Reference(ComposedType)" validate="false">
+                        <wz:editor-parameter>
+                            <wz:name>availableValuesProvider</wz:name>
+                            <wz:value>workflowAttachmentTypeReferenceSearchFacade</wz:value>
+                        </wz:editor-parameter>
+                    </wz:property>
+                    <wz:property qualifier="workflowForm.attachments" type="MultiReference-LIST(Item)">
+                        <wz:editor-parameter>
+                            <wz:name>isNestedObjectCreationDisabled</wz:name>
+                            <wz:value>false</wz:value>
+                        </wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>createOnly</wz:name>
+                            <wz:value>false</wz:value>
+                        </wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>listConfigContext</wz:name>
+                            <wz:value>configurationsListView</wz:value>
+                        </wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>pageSize</wz:name>
+                            <wz:value>5</wz:value>
+                        </wz:editor-parameter>
+                        <wz:editor-parameter>
+                            <wz:name>configurableFlowConfigCtx</wz:name>
+                            <wz:value>create-wizard-workflow-wizard</wz:value>
+                        </wz:editor-parameter>
+                    </wz:property>
+                </wz:content>
+                <wz:navigation id="step2.navigation">
+                    <wz:back/>
+                    <wz:cancel/>
+                    <wz:custom handler="collaborationWorkflowWizardHandler" label="collaboration.workflowwizard.btn.done"/>
+                    <wz:next/>
+                </wz:navigation>
+            </wz:step>
+            <wz:step id="step3" label="collaboration.workflowwizard.step.optional.label" sublabel="collaboration.workflowwizard.step.optional.sublabel">
+                <wz:content id="step3.content">
+                    <wz:property editor="com.hybris.cockpitng.editor.localized(com.hybris.cockpitng.editor.defaulttext)" qualifier="workflowForm.description" type="Localized(java.lang.String)">
+                        <wz:editor-parameter>
+                            <wz:name>rows</wz:name>
+                            <wz:value>14</wz:value>
+                        </wz:editor-parameter>
+                    </wz:property>
+                </wz:content>
+                <wz:navigation id="step3.navigation">
+                    <wz:back/>
+                    <wz:cancel/>
+                    <wz:custom handler="collaborationWorkflowWizardHandler" label="collaboration.workflowwizard.btn.done"/>
+                    <wz:next/>
+                </wz:navigation>
+            </wz:step>
+            <wz:step id="step4" label="collaboration.workflowwizard.step.start.label" sublabel="collaboration.workflowwizard.step.start.sublabel">
+                <wz:info label="collaboration.workflowwizard.step.start.info" position="top"/>
+                <wz:content id="step4.content">
+                </wz:content>
+                <wz:navigation id="step4.navigation">
+                    <wz:back/>
+                    <wz:cancel/>
+                    <wz:custom handler="collaborationWorkflowWizardHandler" label="collaboration.workflowwizard.btn.start">
+                        <wz:parameter>
+                            <wz:name>startWorkflow</wz:name>
+                            <wz:value>true</wz:value>
+                        </wz:parameter>
+                    </wz:custom>
+                </wz:navigation>
+            </wz:step>
+        </wz:flow>
+    </context>
+    <context type="Workflow" component="workflowEditorAreaDynamicForms">
+        <df:dynamicForms xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <df:attribute computedValue="@labelService.getObjectLabel(#root)" id="workflowDynamicName" qualifier="name"/>
+		</df:dynamicForms>
+    </context>
+    <context type="com.hybris.backoffice.workflow.wizard.CollaborationWorkflowWizardForm" component="configurableFlowDynamicForms">
+        <df:dynamicForms xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" modelProperty="workflowForm">
+            <df:attribute id="hideAssignee" modelProperty="*" qualifier="workflowForm.assignee" triggeredOn="workflowForm.workflowTemplate" visibleIf="context.requireAssignee = (context.workflowForm.workflowTemplate!=null &amp;&amp; context.workflowForm.workflowTemplate.equals(spring.getBean('workflowTemplateService').getAdhocWorkflowTemplate()));context.requireAssignee">
+                <df:scriptingConfig visibleIfLanguage="Groovy"/>
+            </df:attribute>
+            <df:attribute computedValue="attachmentType?.code" disabledIf="attachmentType==null" id="dynamicAttachmentType" modelProperty="*" paramName="restrictToType" qualifier="workflowForm.attachments" triggeredOn="attachmentType"/>
+            <df:attribute disabledIf="workflowForm.attachments !=null and workflowForm.attachments.size()&gt;0" id="dynamicAttachmentTypeReset" modelProperty="*" qualifier="attachmentType" triggeredOn="workflowForm.attachments"/>
+            <df:attribute computedValue="workflowTemplate!=null ?workflowTemplate.name:name" id="setNameFromTemplate" qualifier="name" triggeredOn="workflowTemplate"/>
+            <df:attribute computedValue="workflowTemplate!=null ?workflowTemplate.description:description" id="setDescriptionFromTemplate" qualifier="description" triggeredOn="workflowTemplate"/>
+            <df:attribute computedValue="null" id="resetAssignee" qualifier="assignee" triggeredOn="workflowTemplate"/>
+            <df:attribute disabledIf="if(context.ctx.workflowTemplate!=null &amp;&amp; context.workflowForm.workflowTemplate==null) context.setValue('workflowForm.workflowTemplate',context.ctx.workflowTemplate); context.ctx.workflowTemplate!=null" id="initWorkflowTemplate" modelProperty="*" qualifier="workflowForm.workflowTemplate" triggeredOn="ctx.workflowTemplate">
+                <df:scriptingConfig disabledIfLanguage="Groovy"/>
+			</df:attribute>
+		</df:dynamicForms>
+    </context>
+    <context component="task-status-filter">
+        <vc:value-chooser xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <vc:option id="inprogress" label="workflow.action.in_progress" selected="true">
+                <vc:value expression="IN_PROGRESS" factory-method="valueOf" id="inprogress" type="de.hybris.platform.workflow.enums.WorkflowActionStatus"/>
+                <vc:value expression="PAUSED" factory-method="valueOf" id="paused" type="de.hybris.platform.workflow.enums.WorkflowActionStatus"/>
+			</vc:option>
+            <vc:option id="completed" label="workflow.action.completed">
+                <vc:value expression="COMPLETED" factory-method="valueOf" id="completed" type="de.hybris.platform.workflow.enums.WorkflowActionStatus"/>
+			</vc:option>
+            <vc:option id="terminated" label="workflow.action.terminated">
+                <vc:value expression="TERMINATED" factory-method="valueOf" id="terminated" type="de.hybris.platform.workflow.enums.WorkflowActionStatus"/>
+			</vc:option>
+		</vc:value-chooser>
+    </context>
+    <context component="workflowDetailsActions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.backoffice.widgets.actions.startWorkflow" property="$_selectedWorkflow">
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>workflow.action.confirmation.title.start</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.terminateWorkflow" property="$_selectedWorkflow">
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>workflow.action.confirmation.title.terminate</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.backoffice.widgets.actions.deleteWorkflow" property="$_selectedWorkflow">
+                    <y:parameter>
+                        <y:name>actionName</y:name>
+                        <y:value>workflow.action.confirmation.title.delete</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context merge-by="source" component="notification-area" source="configurableFlow">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications eventType="AuditReportGenerationInvoked" level="SUCCESS">
+                <na:message>user.notification.actions.createauditreport.generation.invoked.success</na:message>
+			</na:notifications>
+            <na:notifications eventType="AuditReportGenerationInvoked" level="FAILURE">
+                <na:message>user.notification.actions.createauditreport.generation.invoked.failure</na:message>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="mediaReferenceHandler">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications destination="GLOBAL" eventType="createMediaReference" level="FAILURE">
+                <na:message>user.notification.create.media.reference.failure</na:message>
+                <na:references>
+                    <na:reference index="0" link="false" message="#root" placeholder="0"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context parent="RendererTemplate" type="AuditReportTemplate" component="base">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:labels>
+                <y:label>description?:code</y:label>
+			</y:labels>
+		</y:base>
+    </context>
+    <context merge-by="source" component="notification-area" source="bulkEdit">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications destination="TOPMOST" eventType="missingForm" level="FAILURE">
+                <na:message>bulkedit.missing.form</na:message>
+			</na:notifications>
+            <na:notifications destination="TOPMOST" eventType="missingAttributes" level="FAILURE">
+                <na:message>bulkedit.missing.attributes</na:message>
+			</na:notifications>
+            <na:notifications destination="TOPMOST" eventType="validationError" level="FAILURE">
+                <na:message>bulkedit.validation.error</na:message>
+                <na:references>
+                    <na:reference index="0" link="false" message="@labelService.getObjectLabel(#root)" placeholder="0"/>
+                    <na:reference index="1" link="false" message="root.isEmpty() ? '':@labelService.getObjectLabel(#root.iterator().next())" placeholder="1"/>
+				</na:references>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context merge-by="source" component="notification-area" source="excelExport">
+        <na:notification-area xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <na:notifications destination="TOPMOST" eventType="missingForm" level="FAILURE">
+                <na:message>excel.export.missing.form</na:message>
+			</na:notifications>
+            <na:notifications destination="TOPMOST" eventType="missingAttributes" level="FAILURE">
+                <na:message>excel.export.missing.attributes</na:message>
+			</na:notifications>
+		</na:notification-area>
+    </context>
+    <context type="GenericItem" component="bulk-edit-wizard">
+        <wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" id="bulkEditWizard" size="large" title="bulkedit.wizard.title">
+            <wz:prepare id="initbulkedit">
+                <wz:initialize property="bulkEditForm" template-bean="bulkEditForm"/>
+                <wz:initialize property="bulkEditForm.attributesForm" template-bean="attributesForm"/>
+                <wz:initialize property="bulkEditForm.templateObject" type="ctx.TYPE_CODE"/>
+                <wz:assign property="bulkEditForm.itemsToEdit" value="ctx.bulkEditItems"/>
+                <wz:assign property="bulkEditForm.templateObject" value="bulkEditForm.templateObject==null ? ctx.templateObject:bulkEditForm.templateObject"/>
+			</wz:prepare>
+            <wz:step id="step1" label="bulkedit.wizard.step.select.attributes" sublabel="bulkedit.wizard.step.select.sublabel">
+                <wz:content id="step1.content">
+                    <wz:custom-view id="attributesSelector" lang="zul">
+                        <wz:renderer spring-bean="bulkEditAttributesSelectorRenderer">
+                            <wz:parameter>
+<wz:name>bulkEditFormModelKey</wz:name>
+<wz:value>bulkEditForm</wz:value>
+							</wz:parameter>
+                            <wz:parameter>
+<wz:name>excludedQualifiers</wz:name>
+<wz:value>modifiedtime</wz:value>
+							</wz:parameter>
+						</wz:renderer>
+					</wz:custom-view>
+				</wz:content>
+                <wz:navigation>
+                    <wz:cancel/>
+                    <wz:next visible="bulkEditForm.attributesForm.chosenAttributes?.size()&gt;0"/>
+				</wz:navigation>
+			</wz:step>
+            <wz:step id="step2" label="bulkedit.wizard.step.change.attributes" sublabel="bulkedit.wizard.step.change.sublabel">
+                <wz:content id="step2.content">
+                    <wz:custom-view id="attributesEdit" lang="zul">
+                        <wz:renderer spring-bean="bulkEditRenderer">
+                            <wz:parameter>
+<wz:name>bulkEditFormModelKey</wz:name>
+<wz:value>bulkEditForm</wz:value>
+							</wz:parameter>
+						</wz:renderer>
+					</wz:custom-view>
+				</wz:content>
+                <wz:navigation>
+                    <wz:back/>
+                    <wz:cancel/>
+                    <wz:custom handler="bulkEditHandler" label="bulkedit.wizard.button.update">
+                        <wz:parameter>
+                            <wz:name>bulkEditFormModelKey</wz:name>
+                            <wz:value>bulkEditForm</wz:value>
+						</wz:parameter>
+					</wz:custom>
+				</wz:navigation>
+			</wz:step>
+		</wz:flow>
+    </context>
+    <context merge-by="type" type="Product" component="bulk-edit-wizard">
+        <wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist" id="bulkEditWizard" size="large" title="bulkedit.wizard.title">
+            <wz:step id="step1" label="bulkedit.wizard.step.select.attributes" sublabel="bulkedit.wizard.step.select.sublabel">
+                <wz:content id="step1.content">
+                    <wz:custom-view id="attributesSelector" lang="zul" merge-mode="replace">
+                        <wz:renderer spring-bean="bulkEditAttributesSelectorRenderer">
+                            <wz:parameter>
+<wz:name>bulkEditFormModelKey</wz:name>
+<wz:value>bulkEditForm</wz:value>
+                            </wz:parameter>
+                            <wz:parameter>
+<wz:name>excludedQualifiers</wz:name>
+<wz:value>code,modifiedtime</wz:value>
+							</wz:parameter>
+                        </wz:renderer>
+                    </wz:custom-view>
+                </wz:content>
+                <wz:navigation>
+                    <wz:cancel/>
+                    <wz:next visible="bulkEditForm.attributesForm.chosenAttributes?.size()&gt;0"/>
+                </wz:navigation>
+            </wz:step>
+            <wz:step id="step2" label="bulkedit.wizard.step.change.attributes" sublabel="bulkedit.wizard.step.change.sublabel">
+                <wz:content id="step2.content">
+                    <wz:custom-view id="attributesEdit" lang="zul" merge-mode="replace">
+                        <wz:renderer spring-bean="bulkEditRenderer">
+                            <wz:parameter>
+<wz:name>bulkEditFormModelKey</wz:name>
+<wz:value>bulkEditForm</wz:value>
+                            </wz:parameter>
+                            <wz:parameter>
+<wz:name>editor:description</wz:name>
+<wz:value>com.hybris.cockpitng.editor.localized(com.hybris.cockpitng.editor.wysiwyg)</wz:value>
+                            </wz:parameter>
+                        </wz:renderer>
+                    </wz:custom-view>
+                </wz:content>
+            </wz:step>
+        </wz:flow>
+    </context>
+    <context component="dev-toolbar-actions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:df="http://www.hybris.com/cockpitng/component/dynamicForms" xmlns:dnd="http://www.hybris.com/cockpitng/component/dragAndDrop" xmlns:ea="http://www.hybris.com/cockpitng/component/editorArea" xmlns:ful="http://www.hybris.com/cockpitng/config/fulltextsearch" xmlns:lv="http://www.hybris.com/cockpitng/component/listView" xmlns:na="http://www.hybris.com/cockpitng/config/notifications" xmlns:ql="http://www.hybris.com/cockpitng/component/quick-list" xmlns:sv="http://www.hybris.com/cockpitng/component/summaryview" xmlns:vc="http://www.hybris.com/cockpitng/component/valuechooser" xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" xmlns:ysl="http://www.hybris.com/cockpitng/config/simplelist">
+            <y:group qualifier="common">
+                <y:label>actiongroup.common</y:label>
+                <y:action action-id="com.hybris.cockpitng.actions.devtools.reseteverything">
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>iconOnly</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.cockpitng.actions.devtools.reloadlabels">
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>iconOnly</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.cockpitng.actions.devtools.redeploy">
+                    <y:parameter>
+                        <y:name>viewMode</y:name>
+                        <y:value>iconOnly</y:value>
+					</y:parameter>
+				</y:action>
+			</y:group>
+		</y:actions>
+    </context>
+    <context merge-by="module" component="explorer-tree" module="cockpit">
+        <explorer-tree:explorer-tree xmlns:explorer-tree="http://www.hybris.com/cockpitng/config/explorertree">
+            <explorer-tree:navigation-node id="hmc.cockpit">
+                <explorer-tree:type-node code="CockpitItemTemplate" id="type_tree_cockpititemtemplate"/>
+                <explorer-tree:type-node code="CockpitUIComponentConfiguration" id="type_tree_cockpituicomponentconfiguration"/>
+                <explorer-tree:type-node code="CockpitUIComponentAccessRight" id="type_tree_cockpituicomponentaccessright"/>
+            </explorer-tree:navigation-node>
+        </explorer-tree:explorer-tree>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitItemTemplate" component="base" module="cockpit">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <y:labels>
+                <y:label>code</y:label>
+            </y:labels>
+        </y:base>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitItemTemplate" component="advanced-search" module="cockpit">
+        <advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+            <advanced-search:field-list>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="code" selected="true"/>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="name" selected="true"/>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="relatedType" selected="true"/>
+            </advanced-search:field-list>
+        </advanced-search:advanced-search>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitItemTemplate" component="listview" module="cockpit">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="code"/>
+            <list-view:column qualifier="name"/>
+            <list-view:column qualifier="relatedType"/>
+            <list-view:column qualifier="classificationClasses"/>
+        </list-view:list-view>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitItemTemplate" component="editor-area" module="cockpit">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="name"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute editor="com.hybris.cockpitng.editor.localized(com.hybris.cockpitng.editor.wysiwyg)" qualifier="description"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="relatedType"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="classificationClasses"/>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentConfiguration" component="base" module="cockpit">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <y:labels>
+                <y:label>code</y:label>
+            </y:labels>
+        </y:base>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentConfiguration" component="advanced-search" module="cockpit">
+        <advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+            <advanced-search:field-list>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="code" selected="true"/>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="objectTemplateCode" selected="true"/>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="principal" selected="true"/>
+            </advanced-search:field-list>
+        </advanced-search:advanced-search>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentConfiguration" component="listview" module="cockpit">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="code"/>
+            <list-view:column qualifier="objectTemplateCode"/>
+            <list-view:column qualifier="principal"/>
+        </list-view:list-view>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentConfiguration" component="editor-area" module="cockpit">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="objectTemplateCode"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="principal"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="media"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="factoryBean"/>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentAccessRight" component="base" module="cockpit">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <y:labels>
+                <y:label>code</y:label>
+            </y:labels>
+        </y:base>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentAccessRight" component="advanced-search" module="cockpit">
+        <advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+            <advanced-search:field-list>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="code" selected="true"/>
+            </advanced-search:field-list>
+        </advanced-search:advanced-search>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentAccessRight" component="listview" module="cockpit">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="code"/>
+        </list-view:list-view>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="CockpitUIComponentAccessRight" component="editor-area" module="cockpit">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="readPrincipals"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="writePrincipals"/>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" component="explorer-tree" module="mcc">
+        <explorer-tree:explorer-tree xmlns:explorer-tree="http://www.hybris.com/cockpitng/config/explorertree">
+            <explorer-tree:navigation-node id="hmc.cockpit">
+                <explorer-tree:navigation-node id="type_tree_mcc">
+                    <explorer-tree:type-node code="AbstractLinkEntry" id="type_tree_abstractlinkentry"/>
+                </explorer-tree:navigation-node>
+            </explorer-tree:navigation-node>
+        </explorer-tree:explorer-tree>
+    </context>
+    <context merge-by="type" parent="GenericItem" type="AbstractLinkEntry" component="base" module="mcc">
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <y:labels>
+                <y:label>code+ ' - ' +area</y:label>
+            </y:labels>
+        </y:base>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="AbstractLinkEntry" component="advanced-search" module="mcc">
+        <advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+            <advanced-search:field-list>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="code" operator="startsWith" selected="true"/>
+            </advanced-search:field-list>
+        </advanced-search:advanced-search>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="AbstractLinkEntry" component="listview" module="mcc">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="code"/>
+            <list-view:column qualifier="area"/>
+        </list-view:list-view>
+    </context>
+    <context merge-by="module" parent="GenericItem" type="AbstractLinkEntry" component="editor-area" module="mcc">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="area"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common" position="0">
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" parent="AbstractLinkEntry" type="Divider" component="editor-area" module="mcc">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="area"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common" position="0">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="sortorder"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="height"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="spacer"/>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" parent="AbstractLinkEntry" type="StaticLink" component="advanced-search" module="mcc">
+        <advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+            <advanced-search:field-list>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="code" operator="startsWith" selected="true"/>
+                <advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="title" operator="startsWith" selected="true"/>
+            </advanced-search:field-list>
+        </advanced-search:advanced-search>
+    </context>
+    <context merge-by="module" parent="AbstractLinkEntry" type="StaticLink" component="listview" module="mcc">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="code"/>
+            <list-view:column qualifier="title"/>
+            <list-view:column qualifier="area"/>
+        </list-view:list-view>
+    </context>
+    <context merge-by="module" parent="AbstractLinkEntry" type="StaticLink" component="editor-area" module="mcc">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="area"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="url"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common" position="0">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="title"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="descriptionIcon"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="description"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="readPrincipals"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="extensionName"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="parentLink"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="sublinks"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="sortorder"/>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context merge-by="module" parent="StaticLink" type="DynamicLink" component="editor-area" module="mcc">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:essentials>
+                <editorArea:essentialSection name="hmc.essential">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="code"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="area"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="url"/>
+                </editorArea:essentialSection>
+            </editorArea:essentials>
+            <editorArea:tab name="hmc.tab.common" position="0">
+                <editorArea:section name="hmc.properties">
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="title"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="descriptionIcon"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="description"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="readPrincipals"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="extensionName"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="parentLink"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="sublinks"/>
+                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="sortorder"/>
+                    <editorArea:attribute qualifier="script">
+                        <editorArea:editor-parameter>
+                            <editorArea:name>rows</editorArea:name>
+                            <editorArea:value>8</editorArea:value>
+                        </editorArea:editor-parameter>
+                    </editorArea:attribute>
+                    <editorArea:attribute qualifier="visibleScript">
+                        <editorArea:editor-parameter>
+                            <editorArea:name>rows</editorArea:name>
+                            <editorArea:value>8</editorArea:value>
+                        </editorArea:editor-parameter>
+                    </editorArea:attribute>
+                </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>
+    <context component="testeditors">
+        <y:editors xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <y:group qualifier="common">
+                <y:label>editorgroup.common</y:label>
+                <y:property qualifier="mytext" type="java.lang.String"/>
+                <y:property qualifier="myHashText" type="java.lang.Integer"/>
+    		</y:group>
+    	</y:editors>
+    </context>
+    <context component="testactions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <y:group qualifier="common">
+                <y:label>actiongroup.common</y:label>
+                <y:action action-id="com.hybris.cockpitng.action.example.helloworld" property="mytext"/>
+                <y:action action-id="com.hybris.cockpitng.action.example.helloworld" property="mytext"/>
+                <y:action action-id="com.hybris.cockpitng.action.example.helloworld" property="mytext"/>
+    		</y:group>
+    	</y:actions>
+    </context>
+    <context component="testBoolean">
+        <y:editors xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <y:group qualifier="common">
+                <y:label>testBoolean</y:label>
+                <y:property qualifier="boolean" type="BOOLEAN(CHECKBOX)"/>
+			</y:group>
+    	</y:editors>
+    </context>
+    <context principal="advanced" component="explorer-tree">
+        <explorer-tree:explorer-tree xmlns:explorer-tree="http://www.hybris.com/cockpitng/config/explorertree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <explorer-tree:navigation-node id="node1">
+                <explorer-tree:navigation-node id="node1_1">
+                    <explorer-tree:navigation-node id="node1_1_1"/>
+				</explorer-tree:navigation-node>
+                <explorer-tree:navigation-node id="node1_2">
+                    <explorer-tree:navigation-node id="node1_2_1"/>
+				</explorer-tree:navigation-node>
+			</explorer-tree:navigation-node>
+            <explorer-tree:navigation-node id="node2">
+                <explorer-tree:navigation-node id="node2_1"/>
+                <explorer-tree:navigation-node id="testnode"/>
+			</explorer-tree:navigation-node>
+		</explorer-tree:explorer-tree>
+    </context>
+    <context type="com.hybris.cockpitng.dataaccess.facades.permissions.impl.DefaultPermissionInfo" component="permissionManagementTypesCollectionBrowser">
+        <cb:collection-browser xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <cb:available-molds>
+                <cb:mold spring-bean="listViewCollectionBrowserMoldStrategy"/>
+			</cb:available-molds>
+		</cb:collection-browser>
+    </context>
+    <context type="com.hybris.cockpitng.dataaccess.facades.permissions.impl.DefaultPermissionInfo" component="permissionManagementTypes">
+        <list:list-view xmlns:list="http://www.hybris.com/cockpitng/component/listView" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <list:column label="context" qualifier="label"/>
+            <list:column label="read" qualifier="read" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+            <list:column label="change" qualifier="change" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+            <list:column label="create" qualifier="create" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+            <list:column label="remove" qualifier="remove" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+		</list:list-view>
+    </context>
+    <context type="com.hybris.cockpitng.dataaccess.facades.permissions.impl.DefaultPermissionInfo" component="permissionManagementFieldsCollectionBrowser">
+        <cb:collection-browser xmlns:cb="http://www.hybris.com/cockpitng/config/collectionbrowser" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <cb:available-molds>
+                <cb:mold spring-bean="listViewCollectionBrowserMoldStrategy"/>
+			</cb:available-molds>
+		</cb:collection-browser>
+    </context>
+    <context type="com.hybris.cockpitng.dataaccess.facades.permissions.impl.DefaultPermissionInfo" component="permissionManagementFields">
+        <list:list-view xmlns:list="http://www.hybris.com/cockpitng/component/listView" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <list:column label="attribute" qualifier="label"/>
+            <list:column label="read" qualifier="read" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+            <list:column label="change" qualifier="change" spring-bean="permissionManagementListCellRenderer" width="70px"/>
+		</list:list-view>
+    </context>
+    <context type="com.hybris.cockpitng.dataaccess.facades.permissions.impl.DefaultPermissionInfo" component="permissionManagementlistviewActions">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <y:group qualifier="common">
+                <y:action action-id="com.hybris.cockpitng.action.delete.permission" property="selectedObjects" triggerOnKeys="#del">
+                    <y:parameter>
+                        <y:name>needsConfirmation</y:name>
+                        <y:value>true</y:value>
+					</y:parameter>
+				</y:action>
+                <y:action action-id="com.hybris.cockpitng.action.create.permission" property="$_permissionInfoType"/>
+			</y:group>
+		</y:actions>
+    </context>
+    <context principal="advanced" component="available-locales">
+        <al:cockpit-locales xmlns:al="http://www.hybris.com/cockpitng/config/availableLocales" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <al:cockpit-locale enabled="true" locale="en-US" name="english"/>
+            <al:cockpit-locale enabled="true" locale="de-DE" name="german"/>
+		</al:cockpit-locales>
+    </context>
+</config>

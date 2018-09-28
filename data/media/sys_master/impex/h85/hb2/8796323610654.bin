@@ -1,0 +1,21 @@
+$faqArticle=source(code)[unique=true]
+$Keyword=target(keyword)[unique=true]
+INSERT_UPDATE FaqArticleToKeywordRel;$faqArticle;$Keyword;
+;art011;PAYMENTS;
+;art011;ZAHLUNGEN;
+;art021;SHIPPING;
+;art021;VERSAND;
+;art021;DELIVERY;
+;art021;LIEFERUNG;
+;art022;SHIPPING;
+;art022;VERSAND;
+;art022;DELIVERY;
+;art022;LIEFERUNG;
+;art031;CANCELLATION;
+;art031;RÜCKTRITT;
+;art032;MODIFICATION;
+;art032;ÄNDERUNG;
+;art033;RÜCKTRITT;
+;art033;CANCELLATION;
+;art033;MODIFICATION;
+;art033;ÄNDERUNG;

@@ -1,0 +1,20 @@
+
+INSERT_UPDATE FaqArticleToKeywordRel;source(code)[unique=true];target(keyword)[unique=true]
+,,,,error finding existing item : column='target' value='RÜCKTRITT', | column 2: could not resolve item for RÜCKTRITT;art033;RÜCKTRITT;
+,,,,error finding existing item : column='target' value='ZAHLUNGEN', | column 2: could not resolve item for ZAHLUNGEN;art011;ZAHLUNGEN;
+,,,,error finding existing item : column='target' value='DELIVERY', | column 2: could not resolve item for DELIVERY;art021;DELIVERY;
+,,,,error finding existing item : column='target' value='SHIPPING', | column 2: could not resolve item for SHIPPING;art022;SHIPPING;
+,,,,error finding existing item : column='target' value='RÜCKTRITT', | column 2: could not resolve item for RÜCKTRITT;art031;RÜCKTRITT;
+,,,,error finding existing item : column='target' value='ÄNDERUNG', | column 2: could not resolve item for ÄNDERUNG;art033;ÄNDERUNG;
+,,,,error finding existing item : column='target' value='MODIFICATION', | column 2: could not resolve item for MODIFICATION;art032;MODIFICATION;
+,,,,error finding existing item : column='target' value='CANCELLATION', | column 2: could not resolve item for CANCELLATION;art033;CANCELLATION;
+,,,,error finding existing item : column='target' value='MODIFICATION', | column 2: could not resolve item for MODIFICATION;art033;MODIFICATION;
+,,,,error finding existing item : column='target' value='DELIVERY', | column 2: could not resolve item for DELIVERY;art022;DELIVERY;
+,,,,error finding existing item : column='target' value='LIEFERUNG', | column 2: could not resolve item for LIEFERUNG;art021;LIEFERUNG;
+,,,,error finding existing item : column='target' value='LIEFERUNG', | column 2: could not resolve item for LIEFERUNG;art022;LIEFERUNG;
+,,,,error finding existing item : column='target' value='VERSAND', | column 2: could not resolve item for VERSAND;art021;VERSAND;
+,,,,error finding existing item : column='target' value='VERSAND', | column 2: could not resolve item for VERSAND;art022;VERSAND;
+,,,,error finding existing item : column='target' value='ÄNDERUNG', | column 2: could not resolve item for ÄNDERUNG;art032;ÄNDERUNG;
+,,,,error finding existing item : column='target' value='CANCELLATION', | column 2: could not resolve item for CANCELLATION;art031;CANCELLATION;
+,,,,error finding existing item : column='target' value='SHIPPING', | column 2: could not resolve item for SHIPPING;art021;SHIPPING;
+,,,,error finding existing item : column='target' value='PAYMENTS', | column 2: could not resolve item for PAYMENTS;art011;PAYMENTS;

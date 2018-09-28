@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- [y] hybris Platform Copyright (c) 2018 SAP SE or an SAP affiliate company. 
+	All rights reserved. This software is the confidential and proprietary information 
+	of SAP ("Confidential Information"). You shall not disclose such Confidential 
+	Information and shall use it only in accordance with the terms of the license 
+	agreement you entered into with SAP. -->
+<!-- ATTENTION: This is just an example file. You have to edit it according 
+	to your needs. -->
+
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="items.xsd">
+	<enumtypes>
+		<!-- this will create an database representation and also java enumeration -->
+		<enumtype code="FaqArticleStatus">
+			<value code="NEW" />     <!-- set of values for enumeration -->
+			<value code="CHECK" />
+			<value code="APPROVED" />
+			<value code="REJECTED" />
+		</enumtype>
+	</enumtypes>
+
+	<relations>
+		<relation code="FaqTopicToArticleRel" localized="false"
+			generate="true" autocreate="true">
+			<sourceElement type="FaqTopic" qualifier="faqTopic"
+				cardinality="one">
+				<modifiers read="true" write="false" initial="true"
+					optional="false" search="true" />
+			</sourceElement>
+			<targetElement type="FaqArticle"
+				qualifier="faqArticles" cardinality="many" ordered="false"
+				collectiontype="set">
+				<modifiers read="true" write="true" optional="true"
+					search="true" />
+			</targetElement>
+		</relation>
+
+		<relation code="FaqArticleToKeywordRel" localized="false"
+			generate="true" autocreate="true">
+			<deployment table="FaqArtToKeyRel" typecode="20003" />
+			<sourceElement type="FaqArticle"
+				qualifier="faqArticles" cardinality="many" ordered="false"
+				collectiontype="set">
+				<modifiers read="true" write="true" optional="true"
+					search="true" />
+			</sourceElement>
+			<targetElement type="Keyword" qualifier="keywords"
+				cardinality="many" ordered="false" collectiontype="set">
+				<modifiers read="true" write="true" optional="true"
+					search="true" />
+			</targetElement>
+		</relation>
+	</relations>
+
+	<itemtypes>
+		<!-- definition of our type starts here -->
+		<itemtype code="FaqTopic" generate="true"
+			jaloclass="com.training.jalo.FaqTopic" extends="GenericItem"
+			autocreate="true"> <!-- just a technical description what can sometimes help to understand data 
+				model -->
+			<description>FAQ topic like "checkout"</description> <!-- we specify that this type will be placed in separate database table -->
+			<deployment table="FaqTopic" typecode="20001" /> <!-- list of attributes this type will hold -->
+			<attributes> <!-- code - what will be unique -->
+				<attribute qualifier="code" type="java.lang.String"> <!-- we can decide about attribute access -->
+					<modifiers initial="true" write="false" optional="false" />
+					<persistence type="property" />
+				</attribute> <!-- localized attribute means it will hold a value for each defined language 
+					in the system -->
+				<attribute qualifier="name"
+					type="localized:java.lang.String">
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="articleCount"
+					type="java.lang.Integer">
+					<persistence type="dynamic"
+						attributeHandler="faqTopicArticleCountAttrHandler" />
+					<modifiers read="true" write="false" optional="true"
+						unique="false" />
+				</attribute>
+			</attributes>
+			<indexes> <!-- creation of database index for performance and uniqueness control reasons -->
+				<index name="IDX_FaqTopicCode" unique="true">
+					<key attribute="code" />
+				</index>
+			</indexes>
+		</itemtype>
+		<itemtype code="FaqArticle" generate="true"
+			jaloclass="com.training.jalo.FaqArticle" extends="GenericItem"
+			autocreate="true">
+			<description>FAQ article what contains questions and answers</description>
+			<deployment table="FaqArticle" typecode="20002" />
+			<attributes>
+				<!-- code what will be unique -->
+				<attribute qualifier="code" type="java.lang.String">
+					<modifiers initial="true" write="false" optional="false" />
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="question"
+					type="localized:java.lang.String">
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="answer"
+					type="localized:java.lang.String">
+					<!-- we can decide how attribute will be stored in db -->
+					<persistence type="property">
+						<columntype database="oracle">
+							<value>varchar2(4000)</value>
+						</columntype>
+						<columntype database="mysql">
+							<value>text</value>
+						</columntype>
+						<columntype database="sqlserver">
+							<value>nvarchar(max)</value>
+						</columntype>
+						<columntype database="hsqldb">
+							<value>LONGVARCHAR</value>
+						</columntype>
+						<columntype>
+							<value>varchar</value>
+						</columntype>
+					</persistence>
+				</attribute>
+				<attribute qualifier="priority" type="java.lang.Integer">
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="status" type="FaqArticleStatus">
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+
+		</itemtype>
+	</itemtypes>
+
+</items>

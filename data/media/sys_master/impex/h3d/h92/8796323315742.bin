@@ -1,0 +1,13 @@
+$catalog=apparel-ukContentCatalog
+$catalogVersion=catalogversion(catalog(id[default=$catalog]),version[default='Online'])[unique=true,default=$catalog:Online]
+INSERT_UPDATE Keyword;keyword[unique=true];language(isocode);$catalogVersion;
+;PAYMENTS;en;
+;ZAHLUNGEN;de;
+;SHIPPING;en;
+;VERSAND;de;
+;DELIVERY;en;
+;LIEFERUNG;de;
+;CANCELLATION;en;
+;RÜCKTRITT;de;
+;MODIFICATION;en;
+;ÄNDERUNG;de;
