@@ -76,6 +76,8 @@
 		<extension name="backoffice" />
  <extension dir="C:\Hybris\Hybris6.7\hybris\bin/custom/training"/>
  		<extension name="training" />
+    <extension dir="../custom/concerttours"/>  
+ 		<extension name="concerttours" />
 
 	</extensions>
 </hybrisconfig>

@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.hybris.hybris123.runtime.tests.Hybris123Tests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.869 sec <<< FAILURE! - in com.hybris.hybris123.runtime.tests.Hybris123Tests
+loginAndCheckForConcertToursExtension(com.hybris.hybris123.runtime.tests.Hybris123Tests)  Time elapsed: 19.832 sec  <<< FAILURE!
+java.lang.AssertionError: Connect Exception: stale element reference: element is not attached to the page document
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-GQ1GLDN', ip: '192.168.0.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\Users\WASSIM~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51086}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: b04c3461dde4ecb3f6ee9dc14ca3c0ca
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.hybris.hybris123.runtime.tests.Hybris123Tests.fail(Hybris123Tests.java:1434)
+
