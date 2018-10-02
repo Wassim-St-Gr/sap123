@@ -23,7 +23,7 @@
               		username="root" 
              		password="WassimStriped-Giraffe" 
               		driverClassName="com.mysql.jdbc.Driver"
-              		url="jdbc:mysql://localhost/training?useConfigs=maxPerformance&amp;characterEncoding=utf8" 
+              		url="jdbc:mysql://localhost/concerttours?useConfigs=maxPerformance&amp;characterEncoding=utf8" 
 			useStatementFacade="false"/>
         -->
 

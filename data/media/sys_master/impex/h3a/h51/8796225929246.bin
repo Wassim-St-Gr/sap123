@@ -1,4 +1,0 @@
-INSERT_UPDATE FaqTopic;code[unique=true];name[lang=en];name[lang=de];
-;topic001;PAYMENTS;ZAHLUNGEN;
-;topic002;SHIPPING & DELIVERY;VERSAND & LIEFERUNG;
-;topic003;CANCELLATION / MODIFICATION;Stornierung / Änderung;
