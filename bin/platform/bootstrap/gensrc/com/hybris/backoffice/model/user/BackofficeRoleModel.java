@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Oct 4, 2018 11:37:59 AM                     ---
+ * --- Generated at Oct 4, 2018 12:01:04 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.hybris.backoffice.model.user;
