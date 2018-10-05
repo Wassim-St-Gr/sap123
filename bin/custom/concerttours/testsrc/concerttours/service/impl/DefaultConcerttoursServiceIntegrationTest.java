@@ -10,8 +10,8 @@
  */
 package concerttours.service.impl;
 
-import static org.fest.assertions.Assertions.assertThat;
 import static concerttours.constants.ConcerttoursConstants.PLATFORM_LOGO_CODE;
+import static org.fest.assertions.Assertions.assertThat;
 
 import de.hybris.bootstrap.annotations.IntegrationTest;
 import de.hybris.platform.core.model.media.MediaModel;
@@ -23,8 +23,8 @@ import javax.annotation.Resource;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import concerttours.service.ConcerttoursService;
-import concerttours.service.impl.DefaultConcerttoursService;
 
 
 /**
