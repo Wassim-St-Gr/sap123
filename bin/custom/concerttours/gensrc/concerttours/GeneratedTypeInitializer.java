@@ -107,6 +107,8 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 			
 				single_createattr_Concert_concertType();
 			
+				single_createattr_Concert_daysUntil();
+			
 				single_createattr_Product_hashtag();
 			
 				single_createattr_Band_code();
@@ -208,6 +210,19 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.WRITE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG,
 					null,
 					sqlColumnDefinitions
+				);
+			
+	}
+	
+	public void single_createattr_Concert_daysUntil() throws JaloBusinessException
+	{
+		
+				createDynamicAttribute(
+					"Concert", 
+					"daysUntil",  
+					"java.lang.Long",
+					null,
+					de.hybris.platform.jalo.type.AttributeDescriptor.READ_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.OPTIONAL_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.REMOVE_FLAG|de.hybris.platform.jalo.type.AttributeDescriptor.SEARCH_FLAG
 				);
 			
 	}
@@ -383,6 +398,8 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 		
 			single_setAttributeProperties_Concert_concertType();
 		
+			single_setAttributeProperties_Concert_daysUntil();
+		
 				{
 				Map customPropsMap = new HashMap();
 				
@@ -497,6 +514,28 @@ public class GeneratedTypeInitializer extends AbstractTypeInitializer
 								null,
 								customPropsMap,
 								null
+							);
+						}
+					
+						public void single_setAttributeProperties_Concert_daysUntil() throws JaloBusinessException
+						{
+							
+							
+							
+							Map customPropsMap = new HashMap();
+							
+							setAttributeProperties(
+								"Concert", 
+								"daysUntil",
+								false, 
+								null,
+								null,
+								null,
+								true,
+								true,
+								null,
+								customPropsMap,
+								"concertDaysUntilAttributeHandler"
 							);
 						}
 					
